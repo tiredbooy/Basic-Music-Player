@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(14, 13, 13);
+    font-family: 'Markazi Text', serif;
+    font-family: 'Nova Square', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card {
+    background-color: rgb(206, 204, 204);
+    max-width: 350px;
+    max-height: 600px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50vh;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0.2px rgb(131, 130, 130);
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 15%;
+    box-shadow: 1px 0px 5px 0.2px rgb(8, 5, 5);
+    width: 220px;
+    height: 220px;
+    margin-left: 65px;
+}
+
+.img-animate {
+    animation: musicAnimate 5s infinite linear;
+}
+
+
+.music-details {
+    font-family: 'Markazi Text', serif;
+}
+
+.music-details .singer-name {
+    font-size: 29px;
+    margin-top: 30px;
+}
+
+.music-details .music-name {
+    font-size: 20px;
+    margin-bottom: 30px
+}
+
+/*                            Buttons                           */
+
+.buttons {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons #back-btn {
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons #back-btn:hover {
+    color: black;
+}
+
+.buttons #play-btn {
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons #play-btn:hover {
+    color: black;
+}
+
+.buttons #next-btn {
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons #next-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* #volume-btn{
+    font-size:30px;
+    position: relative;
+    right:113px;
+    top:30px;
+} */
+
+/* #volume-btn:hover {
+    color: black;
+    cursor: pointer;
+} */
+
+#shuffle-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#perv-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/*                            Ranges                                        */
+
+
+.volume-control{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: 30px;
+}
+
+#volume-btn{
+    font-size:30px;
+    margin-right: 20px;
+    margin-top: -4px;
+}
+
+#customRange1 {
+    /* transform: rotate(270deg); */
+    /* display: none; */
+    /* position: relative; */
+    /* top: 5px; */
+    /* left: 80px; */
+    width: 130px;
+    height: 20px;
+    margin-right: 20%;
+    /* margin-left: 100px; */
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #1e1f20;
+    height: 0.5rem;
+    border-radius: 5px;
+    
+}
+
+
+#customRange2 {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+#customRange2::-webkit-slider-thumb {
+    background-color: rgb(185, 185, 185);
+}
+
+#flexSwitchCheckDefault {
+    position: relative;
+    left: 51.5%;
+    margin-top: 70px;
+    font-size: 2em
+}
+
+.theme-switcher p {
+    position: relative;
+    left: 45%;
+    color: white;
+    top: 50px
+}
+
+
+/*                          Animation                                     */
+
+
+@keyframes musicAnimate {
+    0% {
+        transform: rotate(0deg) scale(1);
+        box-shadow: 1px 1px 8px 0.2px purple;
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1);
+        box-shadow: 1px 1px 15px 0.2px rgb(255, 142, 189);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+        box-shadow: 1px 1px 8px 0.2px purple;
+    }
+}
